@@ -18,7 +18,7 @@ library:
 knowledge:
 	type: data-driven;;
 	data:
-		let variable be 5;;
+		let variable be 2;;
 	evoke: user_defined;;
 	logic:
 		let variable be variable * 2;
