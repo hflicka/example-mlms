@@ -1,3 +1,5 @@
+// You may call this MLM with: arden2bytecode -r example.mlm
+
 maintenance:
 	title: Example MLM;;
 	mlmname: examplemlm;;
