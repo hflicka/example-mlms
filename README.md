@@ -4,7 +4,7 @@ If you have already installed
 [Arden2ByteCode](http://arden2bytecode.sf.net/download),
 you can run the MLMs in this directory with:
 
-    $ arden2bytecode -r exmaple.mlm
+    $ arden2bytecode -r example.mlm
 
 and:
 
