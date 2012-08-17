@@ -1,0 +1,37 @@
+maintenance:
+    title: hello world;;
+    mlmname: hello_world;;
+    arden: version 2.1;;  
+    version: 1.0;;
+    institution: Peter L. Reicherts Institut;;
+    author: Hannes Flicka;;
+    specialist: Hannes Flicka;;
+    date: 2011-09-08;;
+    validation: testing;;
+
+library:
+    purpose: demonstration of arden syntax;;
+    explanation: n.a.;;
+    keywords: hello world, example, arden2bytecode;;
+    links: http://arden2bytecode.sf.net/ ;;
+
+knowledge:
+    type: data-driven;;
+    data:
+        name := read {Enter your name};
+        stdout_dest := destination{STDOUT}; 
+    ;;
+
+    evoke:
+        null_event;; 
+      
+    logic:
+        conclude true;;
+
+    action:
+        write "Hello " || name || "! " at stdout_dest; 
+    ;;
+
+    urgency:  50;;
+
+end:
