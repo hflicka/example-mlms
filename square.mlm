@@ -1,0 +1,31 @@
+// You may run this MLM with: $ arden2bytecode -r square.mlm
+
+maintenance:
+    title: Square a value;;
+    mlmname: square;;
+    arden: version 1.0;;
+    version: 1.0;;
+    institution: Peter L. Reicherts Institut;;
+    author: Hannes Flicka;;
+    specialist: Hannes Flicka;;
+    date: 2012-04-04;;
+    validation: testing;;
+
+library:
+    purpose: Demonstration of the read statement and multiplication;;
+    explanation: n.a.;;
+    keywords: example, arden2bytecode, read statement, square, multiplication;;
+    links: http://arden2bytecode.sf.net/ ;;
+
+knowledge:
+    type: data-driven;;
+    data:
+        let variable be read {Enter variable value};;
+    evoke: user_defined;;
+    logic:
+        let square be variable * variable;
+        conclude true;; 
+    action:
+        write "You entered: " || variable || ".";
+        write "Multiplied with itself, that is: " || square || ".";;
+end:

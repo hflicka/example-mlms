@@ -1,5 +1,7 @@
+// You may run this MLM with: $ arden2bytecode -r hello_world.mlm
+
 maintenance:
-    title: hello world;;
+    title: Hello World Example;;
     mlmname: hello_world;;
     arden: version 2.1;;  
     version: 1.0;;
@@ -10,9 +12,9 @@ maintenance:
     validation: testing;;
 
 library:
-    purpose: demonstration of arden syntax;;
+    purpose: Demonstration of Arden Syntax and read statement;;
     explanation: n.a.;;
-    keywords: hello world, example, arden2bytecode;;
+    keywords: hello world, example, arden2bytecode, read statement;;
     links: http://arden2bytecode.sf.net/ ;;
 
 knowledge:
@@ -31,7 +33,5 @@ knowledge:
     action:
         write "Hello " || name || "! " at stdout_dest; 
     ;;
-
-    urgency:  50;;
 
 end:
