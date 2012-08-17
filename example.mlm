@@ -1,34 +1,34 @@
-// You may call this MLM with: arden2bytecode -r example.mlm
+// You may run this MLM with: $ arden2bytecode -r example.mlm
 
 maintenance:
-	title: Example MLM;;
-	mlmname: examplemlm;;
-	arden: version 1.0;;
-	version: 1.0;;
-	institution: Peter L. Reicherts Institut;;
-	author: Hannes Flicka;;
-	specialist: Hannes Flicka;;
-	date: 2012-04-04;;
-	validation: testing;;
+    title: Example MLM;;
+    mlmname: examplemlm;;
+    arden: version 1.0;;
+    version: 1.0;;
+    institution: Peter L. Reicherts Institut;;
+    author: Hannes Flicka;;
+    specialist: Hannes Flicka;;
+    date: 2012-04-04;;
+    validation: testing;;
 
 library:
-	purpose: Demonstration of the Arden Syntax Editor;;
-	explanation: n.a.;;
-	keywords: example, arden syntax editor, arden2bytecode;;
-	links: http://arden2bytecode.sf.net/ ;;
+    purpose: Demonstration of the Arden Syntax Editor;;
+    explanation: n.a.;;
+    keywords: example, arden syntax editor, arden2bytecode;;
+    links: http://arden2bytecode.sf.net/ ;;
 
 knowledge:
-	type: data-driven;;
-	data:
-		let variable be 2;;
-	evoke: user_defined;;
-	logic:
-		let variable be variable * 2;
-		if variable > 6 then
-			conclude true;
-		else
-			conclude false;
-		endif;; 
-	action:
-		write "variable is: " || variable || ".";;
+    type: data-driven;;
+    data:
+        let variable be 2;;
+    evoke: user_defined;;
+    logic:
+        let variable be variable * 2;
+        if variable > 6 then
+            conclude true;
+        else
+            conclude false;
+        endif;; 
+    action:
+        write "variable is: " || variable || ".";;
 end:

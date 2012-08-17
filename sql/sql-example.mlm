@@ -1,3 +1,5 @@
+// Have a look at the README.md to see how to connect a JDBC driver
+
 maintenance:
     title: SQL example;;
     mlmname: sql_example;;
