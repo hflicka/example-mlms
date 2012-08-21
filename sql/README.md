@@ -1,9 +1,12 @@
-# Arden2ByteCode SQL Example
+Arden2ByteCode SQL Example
+==========================
 
 This example is also documented in the Arden2ByteCode wiki at: 
 <http://arden2bytecode.sourceforge.net/docs/using-jdbc-and-sql-in-arden-syntax-read-statements>
 
-## Running the Example
+
+Running the Example
+-------------------
 
 To run this example, you need an SQL capable JDBC driver such as the 
 [Xerial SQLiteJDBC driver](http://www.xerial.org/trac/Xerial/wiki/SQLiteJDBC).
@@ -30,7 +33,9 @@ The following command-line switches are used:
 * **-r**  
   Tell Arden2ByteCode to run the MLM directly after compilation.
 
-## Using other SQL Engines
+  
+Using other SQL Engines
+-----------------------
 
 If you want to use MySQL or any other SQL capable database, 
 you have to adjust the command line switches given above by
