@@ -1,0 +1,52 @@
+// Note that arguments passed to a MLM with the -a option on command line
+// must be valid Arden Syntax Expressions. Thus a string must be surrounded
+// by quotes which, in turn must be escaped with \ (backslash) on the
+// command line.
+// Thus passing string "argument 1" would be: 
+// $ arden2bytecode -a "\"argument 1\"" -r arguments.mlm
+
+maintenance:
+    title: Example of how to pass arguments;;
+    mlmname: arguments;;
+    arden: version 2.1;;  
+    version: 1.0;;
+    institution: Peter L. Reicherts Institut;;
+    author: Hannes Flicka;;
+    specialist: Hannes Flicka;;
+    date: 2011-09-08;;
+    validation: testing;;
+
+library:
+    purpose: Demonstration of how to pass arguments to a MLM;;
+    explanation: n.a.;;
+    keywords: example, arden2bytecode, arguments;;
+    links: http://arden2bytecode.sf.net/ ;;
+
+knowledge:
+    type: data-driven;;
+    data:
+        args := argument;
+		num_args := count args;
+        counter := 1;
+        dest := destination {STDOUT};
+    ;;
+
+    evoke:
+        null_event;; 
+      
+    logic:
+        conclude true;;
+
+    action:
+        if num_args is null then
+            num_args := 0;
+        endif;
+        write "There are " || num_args || " arguments to this MLM" at dest;
+        
+        for arg in args do
+            write "Argument number " || counter || " is: " || arg at dest;
+            counter := counter + 1;
+        enddo;
+    ;;
+
+end:
