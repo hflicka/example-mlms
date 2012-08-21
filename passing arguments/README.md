@@ -12,7 +12,7 @@ To be a valid Arden Syntax expression, a string must be surrounded
 by quotes which, in turn, must be properly escaped when being
 passed on the command line.
 
-The Windows shell and Bash use Backslashes to escape quotes.
+The Windows shell and Bash use backslashes to escape quotes.
 
 Windows shell example:
 
