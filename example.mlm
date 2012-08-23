@@ -20,7 +20,8 @@ library:
 knowledge:
     type: data-driven;;
     data:
-        let variable be 2;;
+        let variable be 4;
+        let dest be destination{stdout};;
     evoke: user_defined;;
     logic:
         let variable be variable * 2;
@@ -30,5 +31,5 @@ knowledge:
             conclude false;
         endif;; 
     action:
-        write "variable is: " || variable || ".";;
+        write "variable is: " || variable || "." at dest;;
 end:
