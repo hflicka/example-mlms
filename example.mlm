@@ -20,15 +20,19 @@ library:
 knowledge:
     type: data-driven;;
     data:
-        let variable be 2;;
-    evoke: call;;
+        // set the variables used in this program:
+        let variable be 4; // <- here you can insert other values to try out
+        // set a destination for the write statement later used:
+        let dest be destination {stdout};;
+    evoke: user_defined;;
     logic:
+        // double variable. could also use: variable := variable * 2;
         let variable be variable * 2;
         if variable > 6 then
-            conclude true;
+            conclude true;  // execute action slot
         else
-            conclude false;
+            conclude false; // do not run action slot
         endif;; 
     action:
-        write "variable is: " || variable || ".";;
+        write "variable is: " || variable || "." at dest;;
 end:
