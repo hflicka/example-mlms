@@ -21,7 +21,7 @@ knowledge:
     type: data-driven;;
     data:
         let variable be read {Enter variable value};;
-    evoke: user_defined;;
+    evoke: call;;
     logic:
         let square be variable * variable;
         conclude true;; 

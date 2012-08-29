@@ -25,7 +25,7 @@ knowledge:
         temperature_average := average temperature;
     ;;
     evoke:
-        null_event;; 
+        call;; 
     logic:
         conclude true;;
     action:

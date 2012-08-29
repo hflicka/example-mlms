@@ -21,7 +21,7 @@ knowledge:
     type: data-driven;;
     data:
         let variable be 2;;
-    evoke: user_defined;;
+    evoke: call;;
     logic:
         let variable be variable * 2;
         if variable > 6 then
