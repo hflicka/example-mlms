@@ -24,7 +24,7 @@ knowledge:
         let variable be 4; // <- here you can insert other values to try out
         // set a destination for the write statement later used:
         let dest be destination {stdout};;
-    evoke: call;;
+    evoke: ;; // MLM is called directly
     logic:
         // double variable. could also use: variable := variable * 2;
         let variable be variable * 2;

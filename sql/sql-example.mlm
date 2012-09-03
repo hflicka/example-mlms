@@ -25,7 +25,7 @@ knowledge:
         temperature_average := average temperature;
     ;;
     evoke:
-        call;; 
+        ;; // MLM is called directly
     logic:
         conclude true;;
     action:

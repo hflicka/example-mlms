@@ -24,8 +24,7 @@ knowledge:
         stdout_dest := destination{STDOUT}; 
     ;;
 
-    evoke:
-        call;; 
+    evoke: ;; // MLM is called directly
       
     logic:
         conclude true;;

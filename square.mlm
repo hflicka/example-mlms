@@ -21,7 +21,7 @@ knowledge:
     type: data-driven;;
     data:
         let variable be read {Enter variable value};;
-    evoke: call;;
+    evoke: ;; // MLM is called directly
     logic:
         let square be variable * variable;
         conclude true;; 
