@@ -1,0 +1,64 @@
+maintenance: 
+	title: Demonstration of Arden Synctax features;;
+	mlmname: test;;
+	arden: version 2.5;;
+	version: 1.0;;
+	institution: Peter L. Reichertz Institut for Medical Informatics;;
+	author: Klaus-Hendrik Wolf (Klaus-Hendrik.Wolf@plri.de);;
+	specialist: ;;
+	date: 2012-09-05;;
+	validation: testing;;
+
+library: 
+	purpose: Demostration of different Arden Syntax features;;
+	explanation: ;;
+	keywords: software; testing; demonstration;;
+	citations: 
+		1. Gietzelt M, Goltz U, Grunwald D, Lochau M, Marschollek M, Song B, Wolf KH. 
+		   Arden2Bytecode: a one-pass Arden Syntax compiler for service-oriented 
+		   decision support systems based on the OSGi platform.
+		   Comput Methods Programs Biomed. 2012 May;106(2):114-25.
+	;;
+	links: 
+		URL "Arden2Bytecode Webpage", 'http://www.plri.de/arden2bytecode.html';
+	;;
+
+knowledge:
+	type: data-driven;;
+
+data:
+	let firstThreshold be 5;
+	let secondThreshold be 10;
+	currentValue := read { select potassium from results };
+	stdout := destination{stdout};
+	let emailAddress be destination {mailto:Klaus-Hendrik.Wolf@plri.de};
+	let counter be 10;
+ 	while counter is greater than 1 do 
+ 		let counter be counter - 1; 
+ 	enddo; 
+
+	while counter < 10 do 
+		counter:=counter+1; 
+	enddo;
+;;
+
+evoke: 
+;;
+
+logic: 
+	
+	conclude currentValue is greater than firstThreshold;
+;;
+
+action:
+	if currentValue is greater than secondThreshold then let sendEmail be true; endif;
+	write "currentValue is " || currentValue at stdout;
+	if sendEmail then 
+		write "Hello currentValue is " || currentValue at emailAddress;
+	endif;
+	
+	return currentValue;
+;;
+
+end:
+
