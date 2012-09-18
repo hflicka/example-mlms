@@ -51,7 +51,7 @@ public class ExecMLM extends ExecutionContext {
 			} catch (IOException e) {
 				curLine = "";
 			}
-		} while (!curLine.isEmpty());
+		} while (curLine.length() > 0);
 		
 		ArdenValue [] ardenArray = new ArdenValue[inputStrings.size()];
 		for (int i = 0; i < inputStrings.size(); i++) {
